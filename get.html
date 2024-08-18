@@ -1,0 +1,482 @@
+<!--
+  Hit RUN to see this project in action!
+  
+  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"> 
+  <title>Restaurant webpage</title> 
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); 
+   html, body {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ height: 100%;
+ box-sizing: border-box; 
+     background: url(Rest.jpeg);
+        min-height: 100%;
+        background-size: cover; 
+        
+   }
+    * {
+      font-size: "Playfair Display", serif; 
+      font-weight: 400;
+      font-style: italic;
+    } 
+      .logoh {
+        display: inline-block; 
+        text-decoration: none;
+        gap: 5px;
+      margin: 5px;
+        color: white; 
+      }
+      .navbar2 {
+         padding: 10px; 
+      }
+    .navbar2 ul {
+      margin: 0px; 
+      padding: 0px;
+      width: 100%;
+      list-style-type: none; 
+      overflow: hidden; 
+     } 
+    .navbar2 a {
+      display: inline-block;
+      text-decoration: none; 
+      gap: 5px;
+      margin: 5px;
+      color: white; 
+      
+    }
+    .navbar2 li {
+      float: right;
+    } 
+      .vaat { 
+        background-image: url(Rice.jpeg);
+        background-size: cover;
+        min-height: 100%;
+        
+      } 
+      .vaat ul {
+        list-style-type: none; 
+        text-decoration-style: none;
+        text-decoration: none;
+      }
+      .vaat li {
+        display: inline-block; 
+        color: white;
+      
+      }
+      .vaat h2 {
+        display: inline-block; 
+        color: white;
+      
+      }
+      #Quick {
+        background-image: url(Quick.jpeg); 
+        background-size: cover;
+        min-height: 100%;
+          } 
+      #Quick ul {
+        list-style-type: none; 
+        text-decoration-style: none;
+        text-decoration: none;
+      }
+      #Quick li {
+        display: inline-block; 
+        color: saddlebrown;
+      
+      } 
+      #Quick h2 {
+        display: inline-block; 
+        color: saddlebrown;
+      
+      }
+      #curry {
+        background-image: url(Curry.jpeg); 
+        background-size: cover;
+        min-height: 100%;
+        
+      } 
+      #curry ul {
+        list-style-type: none; 
+        text-decoration-style: none;
+        text-decoration: none;
+      } 
+      #curry li {
+        display: inline-block;
+        color: orangered;
+      
+      }
+      #curry h2 {
+        display: inline-block; 
+        color: orangered;
+      
+      }
+      #chutney {
+        background-image: url(Chutney.jpg);
+        background-size: cover;
+        min-height: 100%;
+        
+      }
+      #chutney ul {
+        list-style-type: none; 
+        text-decoration-style: none;
+        text-decoration: none;
+      } 
+      #chutney li {
+        display: inline-block; 
+        color: darkgreen;
+      
+      } 
+      #chutney h2 {
+        display: inline-block; 
+        color: darkgreen;
+      
+      }
+      #stir-fry {
+        background-image: url(Stirfry.jpeg);
+        background-size: cover;
+        min-height: 100%;
+        
+      }
+      #stir-fry ul {
+        list-style-type: none; 
+        text-decoration-style: none;
+        text-decoration: none;
+      }
+      #stir-fry li {
+        display: inline-block; 
+        color: lightgoldenrodyellow;
+      
+      } 
+      #stir-fry h2 {
+        display: inline-block; 
+        color: lightgoldenrodyellow;
+      
+      }
+      #panio {
+        background-image: url(Drinls.jpeg);
+        min-height: 100%;
+        background-size: cover;
+                width: 100%;
+      }
+      #panio ul {
+        list-style-type: none; 
+        text-decoration-style: none;
+        text-decoration: none;
+      } 
+      #panio li {
+        display: inline-block; 
+        color: deepskyblue;
+      } 
+      
+      input { 
+        background: transparent;
+        border-radius: 10px; 
+        margin: 5px;
+        display: inline-block; 
+        color: grey; 
+        text-align: center; 
+        cursor: pointer;
+      }
+      
+      footer {
+        background-color: navy;
+        min-height: 100%;
+        max-height: 100%;
+        width: 100%;
+ position: relative; /* Ensure it's not being pushed down by other elements */
+ margin-top: 0; /* Ensure there's no margin pushing it down */
+}
+      #top {
+        background-color: darkorange;
+        margin: 0px;
+        padding: 0px;
+        gap: 0px;
+      }
+    </style>
+</head>
+<body>
+  <main>
+  <header id="top">
+  <nav class="navbar2">
+     <label class="logoh">MiRestaurant</label>
+    
+    <ul>
+    <li><a href="">About us</a></li> 
+    <li><a href="">Contact us</a></li> 
+    <li><a href="">Cart</a></li> 
+    </ul>
+  </nav>
+</header>
+       <h1>Order food</h1> 
+ 
+  <section class="food"> 
+    <div class="vaat">
+    <h2>Rice dishes</h2>
+    <ul> 
+      <li>Fried Rice 46Tk</li>
+      <input type="button" value="add to cart"> 
+      <br>
+      <li>Plain white Rice 09Tk</li>
+      <input type="button" value="add to cart">
+      <br>
+   <li>Plain polao 14Tk</li>
+      <input type="button" value="add to cart"> 
+      <br>
+   <li>Vegan Biryani 45Tk</li>
+      <input type="button" value="add to cart">
+      <br>
+   <li>Shrimp Biryani 54Tk</li>
+      <input type="button" value="add to cart">
+      <br>
+   <li>Chicken Biryani 87Tk</li>
+      <input type="button" value="add to cart">
+      <br>
+   <li>Beef Biryani 100Tk</li>
+      <input type="button" value="add to cart">
+      <br>
+   <li>Mutton Biryani 700Tk</li>
+      <input type="button" value="add to cart">
+      <br>
+   <li>Lamb Mandi 300Tk</li>
+      <input type="button" value="add to cart">
+      <br>
+   <li>Chicken Mandi 200Tk</li>
+      <input type="button" value="add to cart">
+      <br>
+   <li>Lamb kabsa 100Tk</li>
+      <input type="button" value="add to cart">
+      <br>
+   <li>Chicken kabsa 400Tk</li>
+      <input type="button" value="add to cart">
+      <br>                                  
+   <li>Dill Rice 600Tk</li>
+      <input type="button" value="add to cart">
+    </ul>
+    </div>
+    <div id="Quick"> 
+      <h2>Quick dishes</h2>
+      <ul>
+        <li>Chicken Hotdog 34Tk</li>
+        <input type="button" value="add to cart">
+        <br>
+   <li>Chicken Roll 40Tk</li>
+        <input type="button" value="add to cart"> 
+      <br>
+        <li>Chicken Sandwich 06Tk</li>
+        <input type="button" value="add to cart">
+      <br>
+        <li>Fried Chicken Sandwich 60Tk</li>
+        <input type="button" value="add to cart">
+        <br>
+        <li>Chicken Spring Roll 04Tk</li>
+        <input type="button" value="add to cart">
+        <br>
+        <li> Crab Wontons 01Tk</li>
+        <input type="button" value="add to cart">
+        <br>
+        <li>Chicken Wontons 01Tk</li>
+        <input type="button" value="add to cart">
+        <br>
+        <li>Chicken Sub sandwich 24Tk</li>
+        <input type="button" value="add to cart"> 
+        <br>
+        <li>Chicken Tacos 04Tk</li>
+        <input type="button" value="add to cart"> 
+        <br>
+        <li>Jackfruit Tacos 06Tk</li>
+        <input type="button" value="add to cart">
+      </ul>
+    </div> 
+    <div id="curry">
+      <h2>Curry Dishes</h2>
+      <ul>
+        <li>Daal 04Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+   <li>Boot er daal 06Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Murgir Jhol 07Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Gorur jhol 04Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Mutton curry 07Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Maach Er Jhol 01Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Haash er Jhol 02Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Butter Chicken</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Chicken Korma 15Tk</li>
+      <input type="button" value="add to cart">
+      </ul>
+    </div>
+    <div id="chutney">
+      <ul>
+        <h2>Chutney and vorta</h2>
+              <li>Tomato Chutney 1Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+      <li>Mint Chutney 1Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Coriander Chutney 1Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Shutki vorta 2Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Alu vorta 2Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Daal Vorta 2Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Shim vorta 1Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Naga Chutney 1Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Guacamole 100Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+        <li>Mango Chutney/Achaar 1Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+      <li>Olive Chutney/Achaar 1Tk</li>
+      <input type="button" value="add to cart">
+      </ul>
+    </div>
+    <div id="stir-fry">
+      <h2>Stir fry dishes</h2>
+      <ul>
+              <li>Sweet and spicy chicken 190Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+      <li>Chicken Chow Mein 50Tk</li>
+      <input type="button" value="add to cart"> 
+    <br>
+   <li>Mushroom and brocoli stir fry 500Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+   <li>Beef and Broccoli Stir Fry 76Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+   <li>Chicken and Broccoli Stir fry 89Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Veggie Stir Fry 120Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li>Jackfruit Stir fry 300Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+   <li> Spicy Beef Noodles Stir Fry 250Tk</li>
+      <input type="button" value="add to cart"> 
+        <br>
+      <li>Spicy Veggie Noodles Stir Fry 400Tk</li>
+      <input type="button" value="add to cart">
+      </ul>
+    </div>
+    <div id="panio">
+      <h2>Drinks</h2>
+      <ul>
+      <li>Water 0Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+      <li>Mango Falooda 300Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+   <li>Pineapple milkshake 500Tk</li>
+      <input type="button" value="add to cart">
+        <br> 
+        <li>Orange Mocktail(no alcohol) 99Tk</li>
+      <input type="button" value="add to cart">
+     <br>
+        <li>Lemon Mojito 150Tk</li>
+      <input type="button" value="add to cart">
+     <br>
+   <li>Apple Juice 5Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+   <li>Milk Tea without sugar 1Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+   <li>Milk tea with sugar 7Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+   <li>Ginger tea 1Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+   <li>Green tea 800Tk</li> 
+      <input type="button" value="add to cart">
+        <br>
+   <li>Mango Juice 1Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+   <li>Mojo Cola 10Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+   <li>Clemon soda 10Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+   <li>FreshUp soda 20Tk</li>
+      <input type="button" value="add to cart">
+        <br>
+   <li>Sparkling water 1Tk</li>
+      <input type="button" value="add to cart">
+      </ul>
+    </div>
+  </section>
+  </main>
+  <footer> 
+    <h2 id="Cont">Contact Us</h2>
+    <ul>
+      <li>Phone: +880123456789</li> 
+      <li>Email: foodweb@gmail.com</li>
+      <li>Street Address: Not Available </li>
+    </ul> 
+    <h6>Copyright ©️ Restaurant Website 2024 All rights reserved</h6>
+  </footer>
+  <script>
+    const buttons = document.querySelectorAll('input[type="button"]');
+    const cart = [name: "Fried Rice", price: 46, quantity: 1]; 
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        const itemName = this.previousElementSibling.textContent.trim(); 
+        const itemPrice = parseFloat(this.previousElementSibling.textContent.match(/\d+(?;\.\d+)?/)[0]); 
+        addToCart(itemName, itemPrice); 
+      }); 
+    }); 
+    function addToCart(name, price) {
+      const cartItem = {
+        name: price, 
+        price: price,
+      };
+      cart.push(cartItem); 
+
+    alert(`${name} added to cart`)
+
+    }
+     </script>
+
+</body>
+
+</html>

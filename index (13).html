@@ -1,0 +1,115 @@
+<!--
+  Hit RUN to see this project in action!
+  
+  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"> 
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); 
+    body {
+      background: url(Resg.jpeg);
+      min-height: 100%;
+      background-size: cover; 
+            }
+    * { 
+        font-size: "Playfair Display", serif; 
+      font-weight: 400;
+      font-style: italic;
+    } 
+    .logo {
+      display: inline-block; 
+        text-decoration: none;
+        gap: 5px;
+      margin: 5px;
+        color: white; 
+    }
+      .navbar {
+         padding: 10px;
+      }
+    .navbar ul {
+      margin: 0px; 
+      padding: 0px;
+      width: 100%;
+      list-style-type: none; 
+      overflow: hidden; 
+     } 
+    .navbar a {
+      display: inline-block; 
+      text-decoration: none; 
+      margin: 5px; 
+      gap: 5px; 
+      color: white;
+    }
+    .navbar li {
+      float: right;
+    }
+    .mathah button { 
+      background: transparent;
+      position: justified;
+      border: 10px solid white;
+      border-radius: 10px;
+      margin: 10px auto;
+      padding: 5px;
+      color: black; 
+      text-align: center; 
+      text-decoration: none; 
+      display: block;
+      width: 800px;
+    } 
+    .mathah {
+      text-align: center; 
+      position: justified;
+      align-items: center; 
+      color: white;
+    } 
+    .mathah p {
+      color: black;
+    }
+    header {
+        background-color: darkorange;
+        margin: 0px;
+        padding: 0px;
+        gap: 0px;
+    }
+  </style>
+  <title>Restaurant webpage</title>
+  
+</head>
+<body> 
+  <header>
+  <nav class="navbar"> 
+    <label class="logo">MiRestaurant</label>
+    <ul>
+    <li><a href="">About us</a></li> 
+    <li><a href="#Cont">Contact us</a></li> 
+    <li><a href="">Cart</a></li> 
+    </ul>
+  </nav> 
+    </header>
+  <div class="mathah">
+<h1>MiRestaurant </h1> 
+  <p>Welcome to our webpage. You can order anything to eat from here. </p> 
+  <button>Get Started</button>
+    </div> 
+  <script> 
+    document.addEventListener('DOMContentLoaded', function() {
+    const buton = document.querySelector('button');  
+
+        buton.addEventListener('click', function(event) {
+          event.preventDefault(); 
+          window.location.href = 'get.html';
+        });
+    }); 
+   </script>
+  <footer>
+<h6>Copyright ©️ MiRestaurant 2024 All rights reserved</h6>
+</footer>
+</body>
+
+</html>
